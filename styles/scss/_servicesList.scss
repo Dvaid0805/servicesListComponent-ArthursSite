@@ -1,0 +1,129 @@
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #CACACA;
+  padding: 10px 20px;
+  &__visible-content {
+    padding-bottom: 15px;
+  }
+  &__item {
+    width: 32%;
+    padding: 10px;
+    margin-right: 21px;
+    border-bottom:1px solid #CACACA ;
+    cursor: pointer;
+  }
+  &__item:nth-of-type(3n) {
+    margin: 0;
+  }
+  &__visible-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item-icon {
+    color: #2074ca;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+  }
+  &__item-name {
+    padding-left: 12px;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 28px;
+    color: #424242;
+    letter-spacing: 0.6px;
+    vertical-align: top;
+  }
+  &__downloadPdf-ico {
+    color: #2074ca;
+  }
+  &__see-more {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: #2074ca;
+    border: 1px solid #2074ca;
+    border-radius: 50%;
+  }
+  &__see-more-closed {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid #2074ca;
+    border-radius: 50%;
+  }
+  &__hidden-content {
+    display: none;
+    position: relative;
+  }
+  &__hidden-text {
+    max-width: 297px;
+    padding: 0 30px 0 38px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    line-height: 1.5  ;
+    color: #424242;;
+  }
+  &__hidden-text:before {
+    content: '';
+    width: 0.5px;
+    height: 100%;
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 0;
+    left: 13px;
+  }
+}
+.closed{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+
+  &:before{
+    position: absolute;
+    left: 11.3px;
+    top: 4px;
+    content: ' ';
+    height: 13px;
+    width: 2px;
+    background-color: #2074ca;
+  }
+  &:before {
+    transform: rotate(90deg);
+  }
+
+}
+
+
+.opened {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+
+  &:before, &:after {
+    position: absolute;
+    left: 11.3px;
+    top: 4px;
+    content: ' ';
+    height: 13px;
+    width: 2px;
+    background-color: #fff;
+  }
+  &:before {
+    transform: rotate(90deg);
+  }
+  &:after {
+    transform: rotate(180deg);
+  }
+}
+
+
+
