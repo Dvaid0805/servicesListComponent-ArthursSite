@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".services-list__visible-content").click(function() {
-        $(this).siblings(".services-list__hidden-content").toggle(500);
+        $(this).siblings(".services-list__hidden-content").toggle();
 
         if($(this).children(".services-list__see-more").hasClass("services-list__see-more-closed")){
             $(this).children(".services-list__see-more").removeClass("services-list__see-more-closed")

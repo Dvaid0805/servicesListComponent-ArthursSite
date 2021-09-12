@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.app {
+  margin-top: 100px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.hidden {
+  display: none; }
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #CACACA;
+  padding: 10px 20px; }
+  .services-list__visible-content {
+    padding-bottom: 15px; }
+  .services-list__item {
+    width: 32%;
+    padding: 10px;
+    margin-right: 21px;
+    border-bottom: 1px solid #CACACA;
+    cursor: pointer; }
+  .services-list__item:nth-of-type(3n) {
+    margin: 0; }
+  .services-list__visible-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .services-list__item-icon {
+    color: #2074ca;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center; }
+  .services-list__item-name {
+    padding-left: 12px;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 28px;
+    color: #424242;
+    letter-spacing: 0.6px;
+    vertical-align: top; }
+  .services-list__downloadPdf-ico {
+    color: #2074ca; }
+  .services-list__see-more {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: #2074ca;
+    border: 1px solid #2074ca;
+    border-radius: 50%; }
+  .services-list__see-more-closed {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid #2074ca;
+    border-radius: 50%; }
+  .services-list__hidden-content {
+    display: none;
+    position: relative; }
+  .services-list__hidden-text {
+    max-width: 297px;
+    padding: 0 30px 0 38px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    color: #424242; }
+  .services-list__hidden-text:before {
+    content: '';
+    width: 0.5px;
+    height: 100%;
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 0;
+    left: 13px; }
+
+.closed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px; }
+  .closed:before {
+    position: absolute;
+    left: 11.3px;
+    top: 4px;
+    content: ' ';
+    height: 13px;
+    width: 2px;
+    background-color: #2074ca; }
+  .closed:before {
+    transform: rotate(90deg); }
+
+.opened {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px; }
+  .opened:before, .opened:after {
+    position: absolute;
+    left: 11.3px;
+    top: 4px;
+    content: ' ';
+    height: 13px;
+    width: 2px;
+    background-color: #fff; }
+  .opened:before {
+    transform: rotate(90deg); }
+  .opened:after {
+    transform: rotate(180deg); }
