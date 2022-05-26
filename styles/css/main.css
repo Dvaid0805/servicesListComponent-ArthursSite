@@ -31,8 +31,9 @@ body {
     width: 32%;
     padding: 10px;
     margin-right: 21px;
-    border-bottom: 1px solid #CACACA;
     cursor: pointer; }
+  .services-list__item:nth-last-child(n+4) {
+    border-bottom: 1px solid #CACACA; }
   .services-list__item:nth-of-type(3n) {
     margin: 0; }
   .services-list__visible-content {

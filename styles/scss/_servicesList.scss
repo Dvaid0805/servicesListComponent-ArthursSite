@@ -1,8 +1,7 @@
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #CACACA;
+    border: 1px solid #CACACA;
   padding: 10px 20px;
   &__visible-content {
     padding-bottom: 15px;
@@ -11,8 +10,10 @@
     width: 32%;
     padding: 10px;
     margin-right: 21px;
-    border-bottom:1px solid #CACACA ;
     cursor: pointer;
+  }
+  &__item:nth-last-child(n+4) {
+    border-bottom:1px solid #CACACA ;
   }
   &__item:nth-of-type(3n) {
     margin: 0;
